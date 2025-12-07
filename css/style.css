@@ -33,11 +33,25 @@ html, body {
   background-color: #843471;
   color: #ffffff;
 }
+.text-justify {
+  text-align: justify;
+}
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0; 
 }
 .nav-item.dropdown:hover > .nav-link {
+  color: #492051;
+}
+.paars{
+  color:#a166c0;
+}
+.profiel-foto {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+.projectendropdown{
   color: #492051;
 }
 .carousel-item .card-img-top {
@@ -58,6 +72,7 @@ html, body {
 .theme-button,
 .card .btn,
 .form-button {
+  text-decoration: none;
   background-color: #62438A;
   border: 2px solid #a166c0;
   color: #ffffff;
@@ -66,7 +81,6 @@ html, body {
   display: inline-block;
   text-align: center;
   cursor: pointer;
-  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
 }
 .theme-button:hover,
 .card .btn:hover,
@@ -94,6 +108,12 @@ footer {
   padding-left: 30px;
   bottom: 0%;
   width:auto;
+}
+.progress-bar {
+  background-color: #a166c0;
+}
+.progress-bar-paars {
+  background-color: #a166c0;
 }
 footer a i {
   color: #a166c0;

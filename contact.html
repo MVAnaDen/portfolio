@@ -5,96 +5,134 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
   <link rel="stylesheet" href="css/reset.css">  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
-    defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>  
+  <script src="js/script.js" defer></script>
 </head>
+
 <body id="top">
-<header>
-  <nav class="navbar navbar-expand-lg fixed-top align-items-center">
-    <section class="container-fluid">
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="assets/images/logo.png" alt="logo" class="me-2">
+        <img src="assets/images/logo.png" alt="Portfolio Anabelle Denerville" class="me-2">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <section class="collapse navbar-collapse" id="mainnav">
-        <ul class="navbar-nav text-center gap-4">
-          <li class="nav-item"><a class="nav-link fs-4 px-3" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link fs-4 px-3" href="portfolio.html">Projecten</a></li>
-          <li class="nav-item"><a class="nav-link active fs-4 px-3" href="contact.html" style="color:#492051;">Contact</a></li>
+      <div class="collapse navbar-collapse" id="mainnav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="projectendropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Projecten
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="portfolio.html">Alle projecten</a></li>
+              <li><a class="dropdown-item" href="project1.html">Webwiz opdracht</a></li>
+              <li><a class="dropdown-item" href="project2.html">App ontwikkeling</a></li>
+              <li><a class="dropdown-item" href="project3.html">Project 3</a></li>
+              <li><a class="dropdown-item" href="project4.html">Project 4</a></li>
+              <li><a class="dropdown-item" href="project5.html">Project 5</a></li>
+              <li><a class="dropdown-item" href="project6.html">Project 6</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+          </li>
         </ul>
-      </section>
-    </section>
+      </div>
+    </div>
   </nav>
-</header>
-<section class="container my-5 pt-5">
-  <section class="row g-5">
-    <main class="col-md-9 text-center">
-      <section class="row mb-4">
-        <section class="col">
-          <h1 class="display-4 fw-bold text-uppercase" style="color: #a166c0;">Contact</h1>
-          <p class="lead mx-auto" style="max-width: 700px; color: #a166c0;">
-            Als je geïnteresseerd bent in wat ik doe en meer wilt weten, neem gerust contact met me op!
+
+  <main class="container my-5 pt-5">
+    <div class="row g-5">
+      <div class="col-md-9">
+        <h1 class="display-4 fw-bold text-uppercase paars">Info</h1>
+        <p >Leer me kennen en neem vervolgens gerust contact op!</p>
+        <section class="text-start mt-4">
+          <h2 class="h4 fw-bold paars">Over mij</h2>
+          <p class="small">
+            Ik ben Anabelle, een studente Systeem- en Netwerkbeheer.  
+            Oorspronkelijk studeerde ik talen, maar uiteindelijk merkte ik dat mijn echte interesse bij IT ligt.  
+            Thuis werd er altijd veel met technologie gewerkt en daardoor groeide mijn nieuwsgierigheid alleen maar.  
+            Nu leer ik met veel enthousiasme over netwerken, servers en alles wat bij IT komt kijken.
           </p>
+          <h2 class="h5 fw-bold mt-4 paars">Mijn vaardigheden (beginner – 10%)</h2>
+          <p class="small mb-1">Windows Server</p>
+          <div class="progress mb-3">
+            <div class="progress-bar" style="width: 10%"></div>
+          </div>
+          <p class="small mb-1">Python</p>
+          <div class="progress mb-3">
+            <div class="progress-bar" style="width: 10%"></div>
+          </div>
+          <p class="small mb-1">Linux</p>
+          <div class="progress mb-3">
+            <div class="progress-bar" style="width: 10%"></div>
+          </div>
+          <hr class="my-4">
         </section>
-      </section>
-      <section class="row justify-content-center">
-        <section class="col-md-10 col-lg-8">
-          <form action="mailto:ana.denerville@gmail.com" method="GET">
-            <section class="mb-3">
-              <label for="naam" class="form-label">Naam</label>
-              <input type="text" id="naam" name="naam" class="form-control" placeholder="Naam en Voornaam" required>
-            </section>
-            <section class="mb-3">
-              <label for="email" class="form-label">E-mail</label>
-              <input type="email" id="email" name="email" class="form-control" placeholder="E-mail" required>
-            </section>
-            <section class="mb-3">
-              <label for="onderwerp" class="form-label">Onderwerp</label>
-              <input type="text" id="onderwerp" name="subject" class="form-control" placeholder="Onderwerp" required>
-            </section>
-            <section class="mb-3">
-              <label for="bericht" class="form-label">Bericht</label>
-              <textarea id="bericht" name="body" class="form-control" rows="7" placeholder="Bericht" required></textarea>
-            </section>
-            <button type="submit" class="form-button w-100">Verstuur</button>
-          </form>
+
+        <section class="row justify-content-center">
+          <p class="text-center fw-bold paars">Neem contact op!</p>
+          <div class="col-md-10 col-lg-8">
+            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+              <div class="mb-2">
+                <label class="form-label small" for="contact-onderwerp">Onderwerp</label>
+                <input type="text" class="form-control form-control-sm" id="contact-onderwerp" name="subject" required>
+              </div>
+              <div class="mb-2">
+                <label class="form-label small" for="contact-naam">Naam</label>
+                <input type="text" class="form-control form-control-sm" id="contact-naam" name="naam" required>
+              </div>
+              <div class="mb-2">
+                <label class="form-label small" for="contact-email">E-mail</label>
+                <input type="email" class="form-control form-control-sm" id="contact-email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label small" for="contact-bericht">Bericht</label>
+                <textarea class="form-control form-control-sm" rows="10" id="contact-bericht" name="body" required></textarea>
+              </div>
+              <div class="form-group mb-2">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
+              <button type="submit" class="form-button w-100">Verstuur</button>
+            </form>
+          </div>
         </section>
-      </section>
-    </main>
-    <aside class="col-md-3 ps-md-4 mt-5 mt-md-0 text-center">
-      <img src="assets/images/me.webp" alt="Mijn foto"
-        class="rounded-circle mb-3"
-        style="width:160px;height:160px;object-fit:cover;">
-      <h2 class="fs-5 fw-bold mt-3">Welkom op mijn portfolio!</h2>
-      <p class="small px-2 fst-italic" style="text-align: justify;">
-        Ik ben Anabelle, student systeem en netwerkbeheer. Neem gerust een kijkje naar mijn projecten en krijg meteen een beeld van waar ik mee bezig ben.
-      </p>
-      <p class="small mt-4">Je kan ook contact opnemen via LinkedIn:</p>
-      <a href="#" target="_blank"><i class="bi bi-linkedin fs-3"></i></a>
-    </aside>
-  </section>
-</section>
-<footer class="py-3 px-4 d-flex align-items-center justify-content-between">
-  <section class="flex-grow-1"></section>
-  <section class="text-center small flex-grow-1" style="color: #a166c0;">
-    &copy; <span id="year"></span> Anabelle Denerville
-  </section>
-  <section class="text-end flex-grow-1">
-    <a href="contact.html" class="text-decoration-none fs-3 me-3" aria-label="Contact">
-      <i class="bi bi-envelope-fill"></i>
-    </a>
-    <a href="#top" class="text-decoration-none fs-3" aria-label="Back to top">
-      <i class="bi bi-arrow-up-square-fill"></i>
-    </a>
-  </section>
-</footer>
+      </div>
+
+      <aside class="col-md-3 ps-md-4 mt-5 mt-md-0 text-center">
+        <section>
+          <img src="assets/images/me.webp" alt="Mijn foto" class="rounded-circle mb-3 profiel-foto">
+          <h2 class="fs-5 fw-bold mt-3">Welkom op mijn portfolio!</h2>
+          <p class="small px-2 fst-italic text-justify">
+            Ik ben Anabelle, studente Systeem- en Netwerkbeheer.  
+            Bekijk zeker mijn projecten voor een betere indruk van mijn werk!
+          </p>
+          <p class="small mt-4">Je kan ook contact opnemen via LinkedIn:</p>
+          <a href="#" target="_blank"><i class="bi bi-linkedin fs-3"></i></a>
+        </section>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer class="py-3 px-4">
+    <div class="d-flex align-items-center">
+      <div class="flex-grow-1"></div>
+      <p class="mb-0 small paars text-center flex-grow-1">&copy; <span id="year"></span> Anabelle Denerville</p>
+      <div class="text-end flex-grow-1">
+        <a href="contact.html" class="text-decoration-none fs-3 me-3"><i class="bi bi-envelope-fill"></i></a>
+        <a href="#top" class="text-decoration-none fs-3"><i class="bi bi-arrow-up-square-fill"></i></a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

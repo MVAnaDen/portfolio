@@ -4,138 +4,229 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welkom op mijn portfolio!</title>
+  
   <link rel="stylesheet" href="css/reset.css">  
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
     defer></script>
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="crossorigin=""/>
+  
+  <link rel="stylesheet" href="css/map.css">
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="crossorigin=""></script>
+
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/homemap.js" defer></script>
   <script src="js/script.js" defer></script>
+
 </head>
+
 <body id="top">
-<header>
-  <nav class="navbar navbar-expand-lg fixed-top align-items-center">
-    <section class="container-fluid">
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="assets/images/logo.png" alt="logo" class="me-2">
+        <img src="assets/images/logo.png" alt="Portfolio Anabelle Denerville" class="me-2">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav">
+
+      <button class="navbar-toggler" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#mainnav"
+              aria-controls="mainnav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <section class="collapse navbar-collapse" id="mainnav">
-        <ul class="navbar-nav text-center gap-4">
-            <li class="nav-item"><a class="nav-link active fs-4 px-3" href="index.html" style="color: #492051;">Home</a></li>
-            <li class="nav-item"><a class="nav-link fs-4 px-3" href="portfolio.html">Projecten</a></li>
-            <li class="nav-item"><a class="nav-link fs-4 px-3" href="contact.html">Contact</a></li>
+
+      <div class="collapse navbar-collapse" id="mainnav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="projectendropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projecten
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="projectendropdown">
+              <li><a class="dropdown-item" href="portfolio.html">Alle projecten</a></li>
+              <li><a class="dropdown-item" href="project1.html">Webwiz opdracht</a></li>
+              <li><a class="dropdown-item" href="project2.html">App ontwikkeling</a></li>
+              <li><a class="dropdown-item" href="project3.html">Project 3</a></li>
+              <li><a class="dropdown-item" href="project4.html">Project 4</a></li>
+              <li><a class="dropdown-item" href="project5.html">Project 5</a></li>
+              <li><a class="dropdown-item" href="project6.html">Project 6</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
         </ul>
-      </section>
-    </section>
+      </div>
+    </div>
   </nav>
-</header>
-<section class="container my-5 pt-5">
-  <section class="row g-5">
-    <main class="col-md-9">     
-      <h1 class="display-4 fw-bold text-uppercase text-center" style="color: #a166c0;">Recente projecten</h1>
-      <p class="lead mx-auto text-center" style="max-width: 700px; color: #a166c0;">Een overzicht van mijn meest recente opdrachten en projecten.
+
+  <div class="container my-5 pt-5">
+    <div class="row g-5">
+      <main class="col-md-9">
+        <section class="mb-4">
+          <article>
+            <h2 class="fw-bold fs-3 paars mb-3 mt-0">Welkom</h2>
+            <p class="text-justify">
+              Mijn naam is Anabelle, een gemotiveerde studente Systeem- en Netwerkbeheer aan AP Hogeschool. Via deze website wil ik laten zien wie ik ben, welke projecten ik tot nu toe heb gerealiseerd en hoe ik als student stap voor stap groei binnen de IT-sector.
+              Dit portfolio vormt een centrale plaats waar ik mijn werk kan presenteren, mijn vooruitgang kan opvolgen en mijn interesses verder kan toelichten.
+            </p>
+            <p class="text-justify">
+              Bedankt voor je bezoek aan mijn website. Neem gerust een kijkje rond, en bij vragen kan je me altijd contacteren via het contactformulier in de sidebar!
+            </p>
+            <hr>
+          </article>
+        </section>
+        <h2 class="fw-bold text-uppercase paars">
+          Recente projecten
+        </h2>
+        <p class="small">
+          Een overzicht van mijn meest recente opdrachten en projecten.
+        </p>
+        <section id="recente-projecten" class="row mb-1">
+          <div class="col-12">
+            <div id="RecenteProjecten" class="carousel slide" data-bs-interval="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#RecenteProjecten" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Webwiz"></button>
+                <button type="button" data-bs-target="#RecenteProjecten" data-bs-slide-to="1"
+                        aria-label="Project 2"></button>
+                <button type="button" data-bs-target="#RecenteProjecten" data-bs-slide-to="2"
+                        aria-label="Project 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <figure class="card shadow-sm custom-bg">
+                    <img src="assets/images/project1.webp" class="card-img-top" alt="WebWiz opdracht">
+                    <figcaption class="card-body text-center">
+                      <h3 class="card-title h5 mb-2">
+                        Datacom en Netwerken: Webwiz gestructureerde bekabeling
+                      </h3>
+                      <p class="card-text small">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aspernatur cupiditate,
+                        iusto sit porro ducimus!
+                      </p>
+                      <a href="project1.html" class="btn theme-button mt-2">Lees meer over de WebWiz opdracht</a>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="carousel-item">
+                  <figure class="card shadow-sm custom-bg">
+                    <img src="assets/images/project2.webp" class="card-img-top" alt="App Concept opdracht">
+                    <figcaption class="card-body text-center">
+                      <h3 class="card-title h5 mb-2">
+                        Projectvaardigeheden: Een app concept ontwikkelen en presenteren
+                      </h3>
+                      <p class="card-text small">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aspernatur cupiditate,
+                        iusto sit porro ducimus!
+                      </p>
+                      <a href="project2.html" class="btn theme-button mt-2">Lees meer over de App Concept opdracht</a>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="carousel-item">
+                  <figure class="card shadow-sm custom-bg">
+                    <img src="assets/images/project2.webp" class="card-img-top" alt="Project 3">
+                    <figcaption class="card-body text-center">
+                      <h3 class="card-title h5 mb-2">
+                        Project 3
+                      </h3>
+                      <p class="card-text small">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aspernatur cupiditate,
+                        iusto sit porro ducimus!
+                      </p>
+                      <a href="project2.html" class="btn theme-button mt-2">Lees meer over mijn derde project</a>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button"
+                      data-bs-target="#RecenteProjecten" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Vorige</span>
+              </button>
+              <button class="carousel-control-next" type="button"
+                      data-bs-target="#RecenteProjecten" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Volgende</span>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <aside class="col-md-3 ps-md-4 mt-5 mt-md-0 text-center">
+        <section id="aside-welkom" class="text-center">
+          <img src="assets/images/me.webp" alt="Mijn foto"
+              class="rounded-circle mb-3 profiel-foto">
+          <h2 class="fs-5 fw-bold mt-3">Welkom op mijn portfolio!</h2>
+          <p class="small px-2 fst-italic text-justify">
+            Ik ben Anabelle, studente systeem en netwerkbeheer. Neem gerust een kijkje naar mijn projecten
+            en krijg meteen een beeld van waar ik mee bezig ben.
+          </p>
+        </section>
+        <section id="aside-contact" class="mt-4">
+          <h2 class="fs-5 fw-bold">Neem contact op!</h2>
+          <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+            <div class="mb-2">
+              <label for="aside-onderwerp" class="form-label small">Onderwerp</label>
+              <input type="text" class="form-control form-control-sm" id="aside-onderwerp" name="subject" required>
+            </div>
+            <div class="mb-2">
+              <label for="aside-naam" class="form-label small">Naam</label>
+              <input type="text" class="form-control form-control-sm" id="aside-naam" name="naam" required>
+            </div>
+            <div class="mb-2">
+              <label for="aside-email" class="form-label small">E-mail</label>
+              <input type="email" class="form-control form-control-sm" id="aside-email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="aside-bericht" class="form-label small">Bericht</label>
+              <textarea class="form-control form-control-sm" rows="10" id="aside-bericht" name="body" required></textarea>
+            </div>
+            <div class="form-group">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+            <button type="submit" class="form-button w-100">Verstuur</button>
+          </form>
+        </section>
+        <hr>
+        <h2 class="fs-5 fw-bold my-4">Waar kan je mij vinden?</h2>
+        <section id="indexmap" class="row">
+          <div id="homemap"></div>
+        </section>
+      </aside>
+    </div>
+  </div>
+  
+  <footer class="py-3 px-4">
+    <div class="d-flex align-items-center">
+      <div class="flex-grow-1"></div>
+      <p class="mb-0 small paars text-center flex-grow-1">
+        &copy; <span id="year"></span> Anabelle Denerville
       </p>
-      <section class="row mb-1">
-        <section class="col-12">
-          <section id="recentProjects" class="carousel slide" data-bs-ride="carousel">
-            <section class="carousel-indicators">
-              <button type="button" data-bs-target="#recentProjects" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Webwiz"></button>
-              <button type="button" data-bs-target="#recentProjects" data-bs-slide-to="1" aria-label="Project 2"></button>
-              <button type="button" data-bs-target="#recentProjects" data-bs-slide-to="2" aria-label="Project 3"></button>
-            </section>
-            <section class="carousel-inner">
-              <section class="carousel-item active">
-                <figure class="card shadow-sm custom-bg">
-                  <img src="assets/images/project1.webp" class="card-img-top" alt="WebWiz opdracht">
-                  <figcaption class="card-body text-center">
-                    <h3 class="card-title h5 mb-2">Datacom en Netwerken: Webwiz gestructureerde bekabeling</h3>
-                    <p class="card-text small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aspernatur cupiditate, iusto sit porro ducimus!</p>
-                    <a href="project1.html" class="btn theme-button mt-2">Lees meer</a>
-                  </figcaption>
-                </figure>
-              </section>
-              <section class="carousel-item">
-                <figure class="card shadow-sm custom-bg">
-                  <img src="assets/images/project2.webp" class="card-img-top" alt="Project 2">
-                  <figcaption class="card-body text-center">
-                    <h3 class="card-title h5 mb-2">Project 2</h3>
-                    <p class="card-text small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, iusto!</p>
-                    <a href="project2.html" class="btn theme-button mt-2">Lees meer</a>
-                  </figcaption>
-                </figure>
-              </section>
-              <section class="carousel-item">
-                <figure class="card shadow-sm custom-bg">
-                  <img src="assets/images/project2.webp" class="card-img-top" alt="Project 3">
-                  <figcaption class="card-body text-center">
-                    <h3 class="card-title h5 mb-2">Project 3</h3>
-                    <p class="card-text small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, maxime!</p>
-                    <a href="project3.html" class="btn theme-button mt-2">Lees meer</a>
-                  </figcaption>
-                </figure>
-              </section>
-            </section>
-            <button class="carousel-control-prev" type="button" data-bs-target="#recentProjects" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Vorige</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#recentProjects" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Volgende</span>
-            </button>
-          </section>
-        </section>
-      </section>  
-    </main>
-    <aside class="col-md-3 ps-md-4 mt-5 mt-md-0 text-center">
-      <img src="assets/images/me.webp" alt="Mijn foto"
-       class="rounded-circle mb-3"
-       style="width: 160px; height: 160px; object-fit: cover;">
-      <h2 class="fs-5 fw-bold mt-3">Welkom op mijn portfolio!</h2>
-      <p class="small px-2 fst-italic" style="text-align: justify;">
-        Ik ben Anabelle, student systeem en netwerkbeheer. Neem gerust een kijkje naar mijn projecten en krijg meteen een beeld van waar ik mee bezig ben.
-      </p>    
-      <h2 class="fs-5 fw-bold">Neem contact op!</h2>
-      <form action="mailto:ana.denerville@gmail.com" method="GET">
-        <section class="mb-2">
-          <label for="aside-onderwerp" class="form-label small">Onderwerp</label>
-          <input type="text" name="subject" id="aside-onderwerp" class="form-control form-control-sm" placeholder="Onderwerp" required>
-        </section>
-        <section class="mb-2">
-          <label for="aside-naam" class="form-label small">Naam</label>
-          <input type="text" name="naam" id="aside-naam" class="form-control form-control-sm" placeholder="Naam en Voornaam" required>
-        </section>
-        <section class="mb-2">
-          <label for="aside-email" class="form-label small">E-mail</label>
-          <input type="email" name="email" id="aside-email" class="form-control form-control-sm" placeholder="E-mail" required>
-        </section>
-        <section class="mb-3">
-          <label for="aside-bericht" class="form-label small">Bericht</label>
-          <textarea name="body" id="aside-bericht" rows="4" class="form-control form-control-sm" placeholder="Bericht" required></textarea>
-        </section>
-        <button type="submit" class="form-button w-100">Verstuur</button>
-      </form>
-    </aside>
-  </section>
-</section>
-<footer class="py-3 px-4 d-flex align-items-center justify-content-between">
-  <section class="flex-grow-1"></section>
-  <section class="text-center small flex-grow-1" style="color: #a166c0;">
-    &copy; <span id="year"></span> Anabelle Denerville
-  </section>
-  <section class="text-end flex-grow-1">
-    <a href="contact.html" class="text-decoration-none fs-3 me-3" aria-label="Contact">
-      <i class="bi bi-envelope-fill"></i>
-    </a>
-    <a href="#top" class="text-decoration-none fs-3" aria-label="Back to top">
-      <i class="bi bi-arrow-up-square-fill"></i>
-    </a>
-  </section>
-</footer>
+      <div class="text-end flex-grow-1">
+        <a href="contact.html" class="text-decoration-none fs-3 me-3" aria-label="Contact">
+          <i class="bi bi-envelope-fill"></i>
+        </a>
+        <a href="#top" class="text-decoration-none fs-3" aria-label="Back to top">
+          <i class="bi bi-arrow-up-square-fill"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

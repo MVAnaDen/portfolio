@@ -4,57 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project 5</title>
-  <link rel="stylesheet" href="css/reset.css">  
+  <link rel="stylesheet" href="css/reset.css"> 
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
     defer></script>
+
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>    
+
+  <script src="js/script.js" defer></script>
+      
 </head>
 <body id="top">
-<header>
-  <nav class="navbar navbar-expand-lg fixed-top align-items-center">
-    <section class="container-fluid">
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="assets/images/logo.png" alt="logo" class="me-2">
+        <img src="assets/images/logo.png" alt="Portfolio Anabelle Denerville" class="me-2">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav">
+      <button class="navbar-toggler" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#mainnav"
+              aria-controls="mainnav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <section class="collapse navbar-collapse" id="mainnav">
-        <ul class="navbar-nav text-center gap-4">
-          <li class="nav-item"><a class="nav-link fs-4 px-3" href="index.html">Home</a></li>
+      <div class="collapse navbar-collapse" id="mainnav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle fs-4 px-3" href="portfolio.html"
-               id="projectendropdown" data-bs-toggle="dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="projectendropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Projecten
             </a>
             <ul class="dropdown-menu" aria-labelledby="projectendropdown">
+              <li><a class="dropdown-item" href="portfolio.html">Alle projecten</a></li>
               <li><a class="dropdown-item" href="project1.html">Webwiz opdracht</a></li>
-              <li><a class="dropdown-item" href="project2.html">Project 2</a></li>
+              <li><a class="dropdown-item" href="project2.html">App ontwikkeling</a></li>
               <li><a class="dropdown-item" href="project3.html">Project 3</a></li>
               <li><a class="dropdown-item" href="project4.html">Project 4</a></li>
-              <li><a class="dropdown-item" href="project5.html">Project 5</a></li>
+              <li><a class="dropdown-item active" aria-current="page" href="project5.html">Project 5</a></li>
               <li><a class="dropdown-item" href="project6.html">Project 6</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link fs-4 px-3" href="contact.html">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
         </ul>
-      </section>
-    </section>
+      </div>
+    </div>
   </nav>
-</header>
+  <header>
+  </header>
 <section class="container my-5 pt-5">
   <section class="row g-5">
     <main class="col-md-9 text-center">
       <section class="row mb-4">
         <section class="col position-relative">
-          <p class="text-start small mb-1" style="color:#a166c0;">DD/MM/YYYY</p>
-          <h1 class="display-5 fw-bold text-center" style="color: #a166c0;">Project 5</h1>
-          <p class="lead mx-auto text-center" style="max-width: 700px; color: #a166c0;">Lorem ipsum dolor sit amet.</p>
+          <h1 class="display-5 fw-bold text-center paars">Project 5</h1>
+          <p class="lead mx-auto text-center paars">Lorem ipsum dolor sit amet.</p>
           <img src="assets/images/project2.webp"
                alt="Project afbeelding"
                class="img-fluid rounded shadow">
@@ -75,52 +87,51 @@
     </main>
     <aside class="col-md-3 ps-md-4 mt-5 mt-md-0 text-center">
       <img src="assets/images/me.webp" alt="Mijn foto"
-        class="rounded-circle mb-3"
-        style="width: 160px; height: 160px; object-fit: cover;">
+        class="rounded-circle mb-3 profiel-foto">
       <h2 class="fs-5 fw-bold mt-3">Welkom op mijn portfolio!</h2>
-      <p class="small px-2 fst-italic" style="text-align: justify;">
+      <p class="small px-2 fst-italic text-justify">
         Ik ben Anabelle, student systeem en netwerkbeheer. Neem gerust een kijkje naar mijn projecten en krijg meteen een beeld van waar ik mee bezig ben.
       </p>
       <h2 class="fs-5 fw-bold">Neem contact op!</h2>
       <form action="mailto:ana.denerville@gmail.com" method="GET">
-        <section class="mb-2">
-          <label for="aside-onderwerp" class="form-label small">Onderwerp</label>
-          <input type="text" name="subject" id="aside-onderwerp"
-            class="form-control form-control-sm" placeholder="Onderwerp" required>
-        </section>
-        <section class="mb-2">
-          <label for="aside-naam" class="form-label small">Naam</label>
-          <input type="text" name="naam" id="aside-naam"
-            class="form-control form-control-sm" placeholder="Naam en Voornaam" required>
-        </section>
-        <section class="mb-2">
-          <label for="aside-email" class="form-label small">E-mail</label>
-          <input type="email" name="email" id="aside-email"
-            class="form-control form-control-sm" placeholder="E-mail" required>
-        </section>
-        <section class="mb-3">
-          <label for="aside-bericht" class="form-label small">Bericht</label>
-          <textarea name="body" id="aside-bericht" rows="4"
-            class="form-control form-control-sm" placeholder="Bericht" required></textarea>
-        </section>
+        <div class="mb-3">
+          <label for="naam" class="form-label">Naam</label>
+          <input type="text" id="naam" name="naam" class="form-control" placeholder="Naam en Voornaam" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="E-mail" required>
+        </div>
+        <div class="mb-3">
+          <label for="onderwerp" class="form-label">Onderwerp</label>
+          <input type="text" id="onderwerp" name="subject" class="form-control" placeholder="Onderwerp" required>
+        </div>
+        <div class="mb-3">
+          <label for="bericht" class="form-label">Bericht</label>
+          <textarea id="bericht" name="body" class="form-control" rows="7" placeholder="Bericht" required></textarea>
+        </div>
         <button type="submit" class="form-button w-100">Verstuur</button>
       </form>
     </aside>
   </section>
 </section>
-<footer class="py-3 px-4 d-flex align-items-center justify-content-between">
-  <section class="flex-grow-1"></section>
-  <section class="text-center small flex-grow-1" style="color: #a166c0;">
-    &copy; <span id="year"></span> Anabelle Denerville
-  </section>
-  <section class="text-end flex-grow-1">
-    <a href="contact.html" class="text-decoration-none fs-3 me-3" aria-label="Contact">
-      <i class="bi bi-envelope-fill"></i>
-    </a>
-    <a href="#top" class="text-decoration-none fs-3" aria-label="Back to top">
-      <i class="bi bi-arrow-up-square-fill"></i>
-    </a>
-  </section>
-</footer>
+
+<footer class="py-3 px-4">
+    <div class="d-flex align-items-center">
+      <div class="flex-grow-1"></div>
+      <p class="mb-0 small paars text-center flex-grow-1">
+        &copy; <span id="year"></span> Anabelle Denerville
+      </p>
+      <div class="text-end flex-grow-1">
+        <a href="contact.html" class="text-decoration-none fs-3 me-3" aria-label="Contact">
+          <i class="bi bi-envelope-fill"></i>
+        </a>
+        <a href="#top" class="text-decoration-none fs-3" aria-label="Back to top">
+          <i class="bi bi-arrow-up-square-fill"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

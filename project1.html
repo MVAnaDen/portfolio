@@ -4,59 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Datacom en Netwerken: Webwiz gestructureerde bekabeling</title>
-  <link rel="stylesheet" href="css/reset.css">  
+  <link rel="stylesheet" href="css/reset.css">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"
     defer></script>
+
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>    
+
+  <script src="js/script.js" defer></script> 
+
 </head>
 <body id="top">
-<header>
-  <nav class="navbar navbar-expand-lg fixed-top align-items-center">
-    <section class="container-fluid">
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="assets/images/logo.png" alt="logo" class="me-2">
+        <img src="assets/images/logo.png" alt="Portfolio Anabelle Denerville" class="me-2">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav">
+
+      <button class="navbar-toggler" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#mainnav"
+              aria-controls="mainnav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <section class="collapse navbar-collapse" id="mainnav">
-        <ul class="navbar-nav text-center gap-4">
-          <li class="nav-item"><a class="nav-link fs-4 px-3" href="index.html">Home</a></li>
+
+      <div class="collapse navbar-collapse" id="mainnav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle fs-4 px-3" href="portfolio.html"
-               id="projectendropdown" data-bs-toggle="dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="projectendropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Projecten
             </a>
             <ul class="dropdown-menu" aria-labelledby="projectendropdown">
-              <li><a class="dropdown-item" href="project1.html">Webwiz opdracht</a></li>
-              <li><a class="dropdown-item" href="project2.html">Project 2</a></li>
+              <li><a class="dropdown-item" href="portfolio.html">Alle projecten</a></li>
+              <li><a class="dropdown-item active" aria-current="page" href="project1.html">Webwiz opdracht</a></li>
+              <li><a class="dropdown-item" href="project2.html">App ontwikkeling</a></li>
               <li><a class="dropdown-item" href="project3.html">Project 3</a></li>
               <li><a class="dropdown-item" href="project4.html">Project 4</a></li>
               <li><a class="dropdown-item" href="project5.html">Project 5</a></li>
               <li><a class="dropdown-item" href="project6.html">Project 6</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link fs-4 px-3" href="contact.html">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
         </ul>
-      </section>
-    </section>
+      </div>
+    </div>
   </nav>
-</header>
+  <header>
+  </header>
 <section class="container my-5 pt-5">
   <section class="row g-5">
     <main class="col-md-9">
       <section class="row mb-4">
-        <section class="col position-relative text-center">
-          <p class="text-start small mb-1" style="color:#a166c0;">26/10/2025</p>
-          <h1 class="display-5 fw-bold text-center" style="color:#a166c0;">
+        <section class="col position-relative">
+          <h1 class="display-5 fw-bold paars">
             Datacom en Netwerken: Webwiz gestructureerde bekabeling
           </h1>
-          <p class="lead mx-auto text-center" style="max-width:700px; color:#a166c0;">
+          <p class="lead mx-auto text-center paars">
             Gestructureerde bekabeling
           </p>
           <img src="assets/images/project1.webp"
@@ -66,68 +81,86 @@
       </section>
       <section class="row my-5">
         <section class="col-md-10 mx-auto">
-          <p class="lead" style="text-align: justify;">Voor het vak <strong>Datacom en Netwerken</strong> kregen we de opdracht om voor het fictieve bedrijf <strong>Webwiz</strong> een volledig gestructureerd bekabelingsplan op te stellen. We moesten dit in duo’s uitvoeren, dus ik werkte samen met een medestudent om alle onderdelen van het project uit te werken.</p>
-          <p style="text-align: justify;">Webwiz had duidelijke vereisten rond werkplekken, laptops, VoIP-telefoons en servers. We moesten dus rekening houden met alle functionele noden zoals beschreven in de opdracht.</p>
-          <h2 class="h4 fw-bold mt-4 mb-3" style="color:#a166c0;">Onze deliverables</h2>
-          <ul class="mb-4" style="text-align: justify;">
+          <p class="lead">Voor het vak <strong>Datacom en Netwerken</strong> kregen we de opdracht om voor het fictieve bedrijf <strong>Webwiz</strong> een volledig gestructureerd bekabelingsplan op te stellen. We moesten dit in duo’s uitvoeren, dus ik werkte samen met een medestudent om alle onderdelen van het project uit te werken.</p>
+          <p>Webwiz had duidelijke vereisten rond werkplekken, laptops, VoIP-telefoons en servers. We moesten dus rekening houden met alle functionele noden zoals beschreven in de opdracht.</p>
+          <h2 class="h4 fw-bold mt-4 mb-3 paars">Onze deliverables</h2>
+          <ul class="mb-4">
             <li><strong>Aankooplijst: </strong>Een volledig overzicht van al het nodige materiaal.</li>
             <li><strong>Bekabelingsplan: </strong>Opgebouwd in Cisco Packet Tracer.</li>
             <li><strong>Racklayout: </strong>Uitgewerkt in Visio.</li>
             <li><strong>Patchplan: </strong>Waarin alle verbindingen gestructureerd worden gedocumenteerd.</li>
           </ul>
-          <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem molestiae placeat vitae sint culpa animi delectus magnam corporis earum aspernatur porro magni qui facere, iusto blanditiis voluptatibus voluptates quae laborum atque rerum. Nisi incidunt facilis nostrum fuga perspiciatis, quod modi?</p>
-          <p class="mt-3" style="text-align: justify;"><strong>Conclusie:</strong> dit project leerde ons hoe we stap voor stap een degelijk netwerkontwerp uitbouwen en hoe cruciaal documentatie is in een professionele IT-omgeving.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem molestiae placeat vitae sint culpa animi delectus magnam corporis earum aspernatur porro magni qui facere, iusto blanditiis voluptatibus voluptates quae laborum atque rerum. Nisi incidunt facilis nostrum fuga perspiciatis, quod modi?</p>
+          <p class="mt-3"><strong>Conclusie:</strong> dit project leerde ons hoe we stap voor stap een degelijk netwerkontwerp uitbouwen en hoe cruciaal documentatie is in een professionele IT-omgeving.</p>
         </section>
       </section>
     </main>
     <aside class="col-md-3 ps-md-4 mt-5 mt-md-0 text-center">
-      <img src="assets/images/me.webp" alt="Mijn foto"
-        class="rounded-circle mb-3"
-        style="width:160px; height:160px; object-fit:cover;">
-      <h2 class="fs-5 fw-bold mt-3">Welkom op mijn portfolio!</h2>
-      <p class="small px-2 fst-italic" style="text-align: justify;">
-        Ik ben Anabelle, student systeem en netwerkbeheer. Neem gerust een kijkje naar mijn projecten en krijg meteen een beeld van waar ik mee bezig ben.
-      </p>
-      <h2 class="fs-5 fw-bold">Neem contact op!</h2>
-      <form action="mailto:ana.denerville@gmail.com" method="GET">
-        <section class="mb-2">
-          <label for="aside-onderwerp" class="form-label small">Onderwerp</label>
-          <input type="text" name="subject" id="aside-onderwerp"
-            class="form-control form-control-sm" placeholder="Onderwerp" required>
-        </section>
-        <section class="mb-2">
-          <label for="aside-naam" class="form-label small">Naam</label>
-          <input type="text" name="naam" id="aside-naam"
-            class="form-control form-control-sm" placeholder="Naam en Voornaam" required>
-        </section>
-        <section class="mb-2">
-          <label for="aside-email" class="form-label small">E-mail</label>
-          <input type="email" name="email" id="aside-email"
-            class="form-control form-control-sm" placeholder="E-mail" required>
-        </section>
-        <section class="mb-3">
-          <label for="aside-bericht" class="form-label small">Bericht</label>
-          <textarea name="body" id="aside-bericht" rows="4"
-            class="form-control form-control-sm" placeholder="Bericht" required></textarea>
-        </section>
-        <button type="submit" class="form-button w-100">Verstuur</button>
-      </form>
+      <section id="aside-welkom" class="text-center">
+        <img src="assets/images/me.webp" alt="Mijn foto"
+          class="rounded-circle mb-3 profiel-foto">
+        <h2 class="fs-5 fw-bold mt-3">Welkom op mijn portfolio!</h2>
+        <p class="small px-2 fst-italic text-justify">
+          Ik ben Anabelle, studente systeem en netwerkbeheer. Neem gerust een kijkje naar mijn projecten
+          en krijg meteen een beeld van waar ik mee bezig ben.
+        </p>
+      </section>
+      <section id="aside-recent" class="mt-4 text-center">
+        <h2 class="fs-5 fw-bold">Recent project</h2>
+        <img src="assets/images/project2.webp"
+            alt="Recent project"
+            class="aside-project-img rounded mb-2">
+        <p class="small mt-2 px-2">
+          WebWiz gestructureerde bekabeling/ mijn meest recente uitgewerkte opdracht.
+        </p>
+        <a href="project1.html" class="theme-button w-100 mt-2">Bekijk project</a>
+      </section>
+      <section id="aside-contact" class="mt-4">
+        <h2 class="fs-5 fw-bold">Neem contact op!</h2>
+        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <div class="mb-2">
+            <label for="aside-onderwerp" class="form-label small">Onderwerp</label>
+            <input type="text" class="form-control form-control-sm" id="aside-onderwerp" name="subject" required>
+          </div>
+          <div class="mb-2">
+            <label for="aside-naam" class="form-label small">Naam</label>
+            <input type="text" class="form-control form-control-sm" id="aside-naam" name="naam" required>
+          </div>
+          <div class="mb-2">
+            <label for="aside-email" class="form-label small">E-mail</label>
+            <input type="email" class="form-control form-control-sm" id="aside-email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="aside-bericht" class="form-label small">Bericht</label>
+            <textarea class="form-control form-control-sm" rows="10" id="aside-bericht" name="body" required></textarea>
+          </div>
+          <div class="form-group">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+          <button type="submit" class="form-button w-100">Verstuur</button>
+        </form>
+      </section>
     </aside>
+    
   </section>
 </section>
-<footer class="py-3 px-4 d-flex align-items-center justify-content-between">
-  <section class="flex-grow-1"></section>
-  <section class="text-center small flex-grow-1" style="color: #a166c0;">
-    &copy; <span id="year"></span> Anabelle Denerville
-  </section>
-  <section class="text-end flex-grow-1">
-    <a href="contact.html" class="text-decoration-none fs-3 me-3" aria-label="Contact">
-      <i class="bi bi-envelope-fill"></i>
-    </a>
-    <a href="#top" class="text-decoration-none fs-3" aria-label="Back to top">
-      <i class="bi bi-arrow-up-square-fill"></i>
-    </a>
-  </section>
-</footer>
+
+<footer class="py-3 px-4">
+    <div class="d-flex align-items-center">
+      <div class="flex-grow-1"></div>
+      <p class="mb-0 small paars text-center flex-grow-1">
+        &copy; <span id="year"></span> Anabelle Denerville
+      </p>
+      <div class="text-end flex-grow-1">
+        <a href="contact.html" class="text-decoration-none fs-3 me-3" aria-label="Contact">
+          <i class="bi bi-envelope-fill"></i>
+        </a>
+        <a href="#top" class="text-decoration-none fs-3" aria-label="Back to top">
+          <i class="bi bi-arrow-up-square-fill"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
